@@ -66,3 +66,25 @@ function getWeatherParameters(response) {
   let mainCityName = document.querySelector("#city-name");
   mainCityName.innerHTML = city;
 }
+//conversion Celsius-Farenheit
+function getFarenheit(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#current-temp");
+  let temp = tempElement.innerHTML;
+  temp = Number(temp);
+  tempElement.innerHTML = Math.round(temp * 1.8 + 32);
+}
+
+function convertToCelsius(event) {
+  event.preventDefault();
+  let tempElement = document.querySelector("#current-temp");
+  let temp = tempElement.innerHTML;
+  temp = Number(temp);
+  tempElement.innerHTML = Math.round((temp - 32) / 1.8);
+}
+
+let celsiusTemp = document.querySelector("#celsius-temp");
+celsiusTemp.addEventListener("click", convertToCelsius);
+
+let farenheitTemp = document.querySelector("#farenheit-temp");
+farenheitTemp.addEventListener("click", getFarenheit);
