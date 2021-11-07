@@ -30,6 +30,15 @@ h1 {
     rgb(244, 245, 246) 74%
   );
 }
+.weather-description {
+  font-size: larger;
+}
+.location-name {
+  font-family: "Londrina Solid", cursive;
+}
+.weather-parameters {
+  font-weight: bold;
+}
 .weather-app {
   display: inline;
 }
