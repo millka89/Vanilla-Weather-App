@@ -91,3 +91,9 @@ h1 {
 .cloudy-snowy {
   color: whitesmoke;
 }
+.coder-footer {
+  text-align: center;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  font-weight: 500;
+  color: white;
+}
