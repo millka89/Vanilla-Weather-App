@@ -103,6 +103,12 @@ function getWeatherParameters(response) {
   //weather description
   let weatherDescription = document.querySelector("#description-parameter");
   weatherDescription.innerHTML = response.data.weather[0].description;
+  let weatherIconNow = document.querySelector("#current-weather-img");
+  weatherIconNow.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  weatherIconNow.setAttribute("alt", response.data.weather[0].description);
 }
 //conversion Celsius-Farenheit
 function getFarenheit(event) {
