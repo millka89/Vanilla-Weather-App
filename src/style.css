@@ -8,3 +8,12 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+h1 {
+  text-align: center;
+}
+.current-date {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 150px;
+}
