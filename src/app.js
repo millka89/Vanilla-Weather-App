@@ -34,6 +34,29 @@ function formatDate(date) {
   minutes = ("0" + minutes).slice(-2);
   let newDate = document.querySelector("#today-date-time");
   newDate.innerHTML = `${weekday}, ${currentDay} ${currentMonth} ${currentYear} ${hours}:${minutes}`;
+  //forecast weekdays names
+  let firstDayName = document.querySelector("#forecast-day1");
+  firstDayName.innerHTML = days[date.getDay() + 1];
+  let secondDayName = document.querySelector("#forecast-day2");
+  secondDayName.innerHTML = days[date.getDay() + 2];
+  let thirdDayName = document.querySelector("#forecast-day3");
+  if (date.getDay() + 3 < 6) {
+    thirdDayName.innerHTML = days[date.getDay() + 3];
+  } else {
+    thirdDayName.innerHTML = days[date.getDay() + 3 - 7];
+  }
+  let fourthDayName = document.querySelector("#forecast-day4");
+  if (date.getDay() + 4 < 6) {
+    fourthDayName.innerHTML = days[date.getDay() + 4];
+  } else {
+    fourthDayName.innerHTML = days[date.getDay() + 4 - 7];
+  }
+  let fifthDayName = document.querySelector("#forecast-day5");
+  if (date.getDay() + 5 < 6) {
+    fifthDayName.innerHTML = days[date.getDay() + 5];
+  } else {
+    fifthDayName.innerHTML = days[date.getDay() + 5 - 7];
+  }
 }
 let now = new Date();
 formatDate(now);
