@@ -100,8 +100,13 @@ h1 {
 .degrees {
   font-size: 18px;
   position: relative;
-  top: -20px;
+  top: -30px;
 }
 #description-parameter {
   text-transform: capitalize;
+}
+.women-picture {
+  position: relative;
+  right: 40px;
+  top: 20px;
 }
