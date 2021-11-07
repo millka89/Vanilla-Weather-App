@@ -23,7 +23,6 @@ h1 {
   font-weight: bold;
   color: white;
 }
-
 .current-card {
   background: linear-gradient(
     326deg,
@@ -56,4 +55,30 @@ h1 {
 }
 .search-button {
   background: #8fcaff;
+}
+.weather-forecast {
+  font-size: 32px;
+  font-weight: 900;
+}
+.forecast {
+  background: linear-gradient(
+    326deg,
+    rgb(115, 201, 252) 0%,
+    rgb(244, 245, 246) 74%
+  );
+}
+.mostly-cloudy {
+  color: #385170;
+}
+.cloudy-rainy {
+  color: #385170;
+}
+.partly-clear {
+  color: #64c4ed;
+}
+.partly-clear-rainy {
+  color: #64c4ed;
+}
+.cloudy-snowy {
+  color: whitesmoke;
 }
