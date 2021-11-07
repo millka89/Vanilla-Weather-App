@@ -37,3 +37,17 @@ function formatDate(date) {
 }
 let now = new Date();
 formatDate(now);
+
+//searching engine
+function enterCity(event) {
+  event.preventDefault();
+  let cityEntered = document.querySelector("#city-name-search");
+  let cityName = document.querySelector("#city-name");
+  if (cityEntered.value) {
+    cityName.innerHTML = `${cityEntered.value}`;
+  } else {
+    cityName.innerHTML = "Enter a city";
+  }
+}
+let citySearchForm = document.querySelector("#city-name-form");
+citySearchForm.addEventListener("submit", enterCity);
