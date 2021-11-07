@@ -59,12 +59,27 @@ citySearchForm.addEventListener("submit", enterCity);
 
 //weather parameters
 function getWeatherParameters(response) {
+  //temperature
   let temperature = Math.round(response.data.main.temp);
   let temp = document.querySelector("#current-temp");
   temp.innerHTML = temperature;
+  //city name
   let city = response.data.name;
   let mainCityName = document.querySelector("#city-name");
   mainCityName.innerHTML = city;
+  //humidity
+  let humidity = document.querySelector("#humidity-parameter");
+  humidity.innerHTML = `${response.data.main.humidity}%`;
+  //pressure
+  let pressure = document.querySelector("#pressure-parameter");
+  pressure.innerHTML = `${response.data.main.pressure} hPa`;
+  //wind speed
+  let windSpeed = document.querySelector("#wind-parameter");
+  let wind = Math.round(Number(response.data.wind.speed) * 3.6);
+  windSpeed.innerHTML = `${wind} kph`;
+  //weather description
+  let weatherDescription = document.querySelector("#description-parameter");
+  weatherDescription.innerHTML = response.data.weather[0].description;
 }
 //conversion Celsius-Farenheit
 function getFarenheit(event) {
