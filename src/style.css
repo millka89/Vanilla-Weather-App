@@ -102,3 +102,6 @@ h1 {
   position: relative;
   top: -20px;
 }
+#description-parameter {
+  text-transform: capitalize;
+}
