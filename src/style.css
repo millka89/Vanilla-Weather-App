@@ -1,0 +1,10 @@
+body {
+  background: linear-gradient(
+    326deg,
+    rgb(115, 201, 252) 0%,
+    rgb(244, 245, 246) 74%
+  );
+  font-family: "Ubuntu", sans-serif;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
