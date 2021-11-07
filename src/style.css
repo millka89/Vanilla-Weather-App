@@ -17,3 +17,43 @@ h1 {
   font-weight: 400;
   margin-left: 150px;
 }
+.weather-header {
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.current-card {
+  background: linear-gradient(
+    326deg,
+    rgb(115, 201, 252) 0%,
+    rgb(244, 245, 246) 74%
+  );
+}
+.weather-app {
+  display: inline;
+}
+.date-today {
+  font-size: 22px;
+  font-weight: 500;
+}
+.current-date {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 150px;
+}
+.sun-img {
+  color: #ffc93c;
+}
+.current-temp {
+  text-align: left;
+  font-size: 52px;
+}
+.location-button {
+  background: #8fcaff;
+}
+.search-button {
+  background: #8fcaff;
+}
