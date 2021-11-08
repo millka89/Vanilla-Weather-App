@@ -113,6 +113,8 @@ function getWeatherParameters(response) {
 //conversion Celsius-Farenheit
 function getFarenheit(event) {
   event.preventDefault();
+  celsiusTemp.classList.remove("active");
+  farenheitTemp.classList.add("active");
   let tempElement = document.querySelector("#current-temp");
   let temp = tempElement.innerHTML;
   temp = Number(temp);
@@ -121,6 +123,8 @@ function getFarenheit(event) {
 
 function convertToCelsius(event) {
   event.preventDefault();
+  celsiusTemp.classList.add("active");
+  farenheitTemp.classList.remove("active");
   let tempElement = document.querySelector("#current-temp");
   let temp = tempElement.innerHTML;
   temp = Number(temp);
