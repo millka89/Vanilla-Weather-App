@@ -24,11 +24,7 @@ h1 {
   color: white;
 }
 .current-card {
-  background: linear-gradient(
-    326deg,
-    rgb(115, 201, 252) 0%,
-    rgb(244, 245, 246) 74%
-  );
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
 }
 .weather-description {
   font-size: larger;
@@ -52,9 +48,7 @@ h1 {
   font-weight: 400;
   margin-left: 150px;
 }
-.current-img {
-  color: #ffc93c;
-}
+
 .current-temp {
   text-align: left;
   font-size: 52px;
@@ -70,11 +64,7 @@ h1 {
   font-weight: 900;
 }
 .forecast {
-  background: linear-gradient(
-    326deg,
-    rgb(115, 201, 252) 0%,
-    rgb(244, 245, 246) 74%
-  );
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
 }
 .mostly-cloudy {
   color: #385170;
