@@ -108,3 +108,7 @@ h1 {
 .active:hover {
   text-decoration: none;
 }
+.forecast-day {
+  font-size: 20px;
+  font-weight: bold;
+}
