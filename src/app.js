@@ -27,39 +27,16 @@ function formatDate(date) {
   let currentDay = date.getDate();
   let currentMonth = months[date.getMonth()];
   let currentYear = date.getFullYear();
-  let weekday = days[date.getDay()];
+  let day = days[date.getDay()];
   let hours = now.getHours();
   hours = ("0" + hours).slice(-2);
   let minutes = now.getMinutes();
   minutes = ("0" + minutes).slice(-2);
   let newDate = document.querySelector("#today-date-time");
-  newDate.innerHTML = `${weekday}, ${currentDay} ${currentMonth} ${currentYear} ${hours}:${minutes}`;
-  //forecast weekdays names
-  let firstDayName = document.querySelector("#forecast-day1");
-  firstDayName.innerHTML = days[date.getDay() + 1];
-  let secondDayName = document.querySelector("#forecast-day2");
-  secondDayName.innerHTML = days[date.getDay() + 2];
-  let thirdDayName = document.querySelector("#forecast-day3");
-  if (date.getDay() + 3 < 6) {
-    thirdDayName.innerHTML = days[date.getDay() + 3];
-  } else {
-    thirdDayName.innerHTML = days[date.getDay() + 3 - 7];
-  }
-  let fourthDayName = document.querySelector("#forecast-day4");
-  if (date.getDay() + 4 < 6) {
-    fourthDayName.innerHTML = days[date.getDay() + 4];
-  } else {
-    fourthDayName.innerHTML = days[date.getDay() + 4 - 7];
-  }
-  let fifthDayName = document.querySelector("#forecast-day5");
-  if (date.getDay() + 5 < 6) {
-    fifthDayName.innerHTML = days[date.getDay() + 5];
-  } else {
-    fifthDayName.innerHTML = days[date.getDay() + 5 - 7];
-  }
+  newDate.innerHTML = `${day}, ${currentDay} ${currentMonth} ${currentYear} ${hours}:${minutes}`;
+  let now = new Date();
+  formatDate(now);
 }
-let now = new Date();
-formatDate(now);
 
 //searching engine
 function enterCity(event) {
@@ -79,6 +56,32 @@ function enterCity(event) {
 }
 let citySearchForm = document.querySelector("#city-name-form");
 citySearchForm.addEventListener("submit", enterCity);
+
+//display forecast
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-sm">
+          ${day}
+        <div class="weather-icon">
+           <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"
+          alt=""
+          width="42"
+        />
+        </div>
+        <div class="description-forecast mt-3">Cloudy rainy</div>
+        <div class="temp-forecast mt-3">21°C / 5°C</div>
+      </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 //weather parameters
 function getWeatherParameters(response) {
@@ -155,3 +158,5 @@ let button = document.querySelector("#geolocation-current");
 button.addEventListener("click", startNavigator);
 
 navigator.geolocation.getCurrentPosition(retrievePosition);
+
+displayForecast();
