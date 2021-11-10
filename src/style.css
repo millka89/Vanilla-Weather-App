@@ -19,7 +19,7 @@ h1 {
 }
 .weather-header {
   background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
-  font-size: 32px;
+  font-size: 22px;
   font-weight: bold;
   color: white;
 }
@@ -31,6 +31,7 @@ h1 {
 }
 .location-name {
   font-family: "Londrina Solid", cursive;
+  font-size: 18px;
 }
 .weather-parameters {
   font-weight: bold;
