@@ -39,6 +39,7 @@ body {
 }
 .weather-parameters {
   font-weight: bold;
+  text-align: left;
 }
 
 .current-temp {
@@ -56,14 +57,6 @@ body {
   position: relative;
   top: -20px;
   color: white;
-}
-.active {
-  color: white;
-  cursor: default;
-  text-decoration: none;
-}
-.active:hover {
-  text-decoration: none;
 }
 
 .forecast-day {

@@ -148,32 +148,6 @@ function getWeatherParameters(response) {
   weatherIconNow.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
 }
-//conversion Celsius-Farenheit
-function getFarenheit(event) {
-  event.preventDefault();
-  celsiusTemp.classList.remove("active");
-  farenheitTemp.classList.add("active");
-  let tempElement = document.querySelector("#current-temp");
-  let temp = tempElement.innerHTML;
-  temp = Number(temp);
-  tempElement.innerHTML = Math.round(temp * 1.8 + 32);
-}
-
-function convertToCelsius(event) {
-  event.preventDefault();
-  celsiusTemp.classList.add("active");
-  farenheitTemp.classList.remove("active");
-  let tempElement = document.querySelector("#current-temp");
-  let temp = tempElement.innerHTML;
-  temp = Number(temp);
-  tempElement.innerHTML = Math.round((temp - 32) / 1.8);
-}
-
-let celsiusTemp = document.querySelector("#celsius-temp");
-celsiusTemp.addEventListener("click", convertToCelsius);
-
-let farenheitTemp = document.querySelector("#farenheit-temp");
-farenheitTemp.addEventListener("click", getFarenheit);
 
 //current location button - geolocation
 function retrievePosition(position) {
