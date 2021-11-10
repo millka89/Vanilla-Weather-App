@@ -3,45 +3,32 @@ body {
   background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/020/808/original/background.jpg?1636552957");
   background-size: cover;
   background-color: transparent;
-}
-
-.current-date {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  margin-left: 150px;
+  opacity: 95%;
 }
 .weather-header {
-  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  background: linear-gradient(-225deg, #326418 30%, #8da764 48%, #326418 100%);
   font-size: 22px;
   font-weight: bold;
   color: white;
+  text-align: center;
+}
+.current-date {
+  font-size: 18px;
+  font-weight: 400;
 }
 .current-card {
-  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  background: linear-gradient(-225deg, #326418 30%, #8da764 48%, #326418 100%);
+  color: white;
 }
 .weather-description {
-  font-size: larger;
+  font-size: 16px;
 }
 .location-name {
   font-family: "Londrina Solid", cursive;
-  font-size: 18px;
+  font-size: 20px;
 }
 .weather-parameters {
   font-weight: bold;
-}
-.weather-app {
-  display: inline;
-}
-.date-today {
-  font-size: 22px;
-  font-weight: 500;
-}
-.current-date {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  margin-left: 150px;
 }
 
 .current-temp {
@@ -49,61 +36,41 @@ body {
   font-size: 52px;
 }
 .location-button {
-  background: #8fcaff;
+  background: #326418;
 }
 .search-button {
-  background: #8fcaff;
+  background: #326418;
 }
 .weather-forecast {
   font-size: 32px;
   font-weight: 900;
 }
-.forecast {
-  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
-}
-.mostly-cloudy {
-  color: #385170;
-}
-.cloudy-rainy {
-  color: #385170;
-}
-.partly-clear {
-  color: #64c4ed;
-}
-.partly-clear-rainy {
-  color: #64c4ed;
-}
-.cloudy-snowy {
-  color: whitesmoke;
-}
-.coder-footer {
-  text-align: center;
-  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
-  font-weight: 500;
-  color: white;
-}
+
 .degrees {
   font-size: 18px;
   position: relative;
   top: -30px;
 }
-#description-parameter {
-  text-transform: capitalize;
-}
-.women-picture {
-  position: relative;
-  right: 40px;
-  top: 20px;
-}
 .active {
-  color: #212529;
+  color: white;
   cursor: default;
   text-decoration: none;
 }
 .active:hover {
   text-decoration: none;
 }
+
 .forecast-day {
   font-size: 20px;
   font-weight: bold;
+}
+.coder-footer {
+  text-align: center;
+  background: linear-gradient(-225deg, #326418 30%, #8da764 48%, #326418 100%);
+  font-weight: 500;
+  color: white;
+}
+
+#description-parameter {
+  text-transform: capitalize;
 }
