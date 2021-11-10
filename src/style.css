@@ -1,13 +1,10 @@
 body {
-  background: linear-gradient(
-    326deg,
-    rgb(115, 201, 252) 0%,
-    rgb(244, 245, 246) 74%
-  );
   font-family: "Ubuntu", sans-serif;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/020/808/original/background.jpg?1636552957");
+  background-size: cover;
+  background-color: transparent;
 }
+
 h1 {
   text-align: center;
 }
