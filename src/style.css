@@ -6,7 +6,12 @@ body {
   opacity: 95%;
 }
 .weather-header {
-  background: linear-gradient(-225deg, #326418 30%, #8da764 48%, #326418 100%);
+  background: linear-gradient(
+    138deg,
+    rgb(32, 201, 255) 36.7%,
+    rgb(0, 8, 187) 84.4%,
+    rgb(255, 255, 255) 119.7%
+  );
   font-size: 22px;
   font-weight: bold;
   color: white;
@@ -17,7 +22,12 @@ body {
   font-weight: 400;
 }
 .current-card {
-  background: linear-gradient(-225deg, #326418 0%, #8da764 48%, #326418 100%);
+  background: linear-gradient(
+    138deg,
+    rgb(32, 201, 255) 36.7%,
+    rgb(0, 8, 187) 84.4%,
+    rgb(255, 255, 255) 119.7%
+  );
   color: white;
 }
 .weather-description {
@@ -35,12 +45,7 @@ body {
   text-align: left;
   font-size: 52px;
 }
-.location-button {
-  background: #326418;
-}
-.search-button {
-  background: #326418;
-}
+
 .weather-forecast {
   font-size: 32px;
   font-weight: 900;
@@ -50,7 +55,7 @@ body {
   font-size: 18px;
   position: relative;
   top: -20px;
-  color: #326418;
+  color: white;
 }
 .active {
   color: white;
@@ -64,7 +69,7 @@ body {
 .forecast-day {
   font-size: 20px;
   font-weight: bold;
-  color: #326418;
+  color: rgb(0, 8, 187);
 }
 .description-forecast {
   font-size: 14px;
@@ -72,7 +77,12 @@ body {
 }
 .coder-footer {
   text-align: center;
-  background: linear-gradient(-225deg, #326418 0%, #8da764 48%, #326418 100%);
+  background: linear-gradient(
+    138deg,
+    rgb(32, 201, 255) 36.7%,
+    rgb(0, 8, 187) 84.4%,
+    rgb(255, 255, 255) 119.7%
+  );
   font-weight: 500;
   color: white;
 }
