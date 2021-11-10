@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="container weather-app mt-5">
+    <div class="container weather-app mt-4">
       <div class="container weather-card mb-1" style="width: 600px">
         <div class="card text-center">
           <div class="card-header weather-header shadow-sm">
@@ -79,23 +79,24 @@
                 </button>
               </div>
             </form>
-            <div class="container border-o shadow-sm current-card mt-2 p-2">
+            <div class="container border-o shadow-sm current-card mt-2 ">
               <div class="row">
-                 <h4 class="location-name mt-4 ms-5 ps-3" id="city-name"></h4>
-                <div class="col">
+                 <h4 class="location-name mt-4 text-center" id="city-name"></h4>
+                <div class="col pb-3">
                   <img
                     src=""
                     class="current-img"
                     style="font-size: 100px"
                     id="current-weather-img"
                     alt=""
+                    width="120"
                   ></img>
                   <div class="weather-description" id="description-parameter">
                     Clear sky
                   </div>
                 </div>
                 <div class="col">
-                  <div class="col current-temp mt-3">
+                  <div class="col current-temp mt-4">
                     <span id="current-temp"> _ </span>
                     <span class="degrees">
                       <a href="#" id="celsius-temp" class="active"> °C </a>
@@ -104,7 +105,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="col mt-3">
+                <div class="col mt-4">
                   <div class="row">
                     <div class="col weather-parameters">
                       <div class="row">Humidity</div>
@@ -133,7 +134,7 @@
       </div>
       <div class="container" style="width: 600px">
       <div class="card-footer text-center coder-footer">
-        <a href="https://github.com/millka89/WeatherApp" alt="link to GitHub">Open-source code</a> by Kamila Mikulska
+        <a href="https://github.com/millka89/WeatherApp" alt="link to GitHub" class="linkGit">Open-source code</a> by Kamila Mikulska
       </div>
       </div>
     </div>

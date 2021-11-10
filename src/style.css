@@ -25,8 +25,7 @@ body {
 }
 .location-name {
   font-family: "Londrina Solid", cursive;
-  font-size: 20px;
-  text-align: left;
+  font-size: 36px;
 }
 .weather-parameters {
   font-weight: bold;
@@ -51,6 +50,7 @@ body {
   font-size: 18px;
   position: relative;
   top: -20px;
+  color: #326418;
 }
 .active {
   color: white;
@@ -74,6 +74,9 @@ body {
   text-align: center;
   background: linear-gradient(-225deg, #326418 0%, #8da764 48%, #326418 100%);
   font-weight: 500;
+  color: white;
+}
+.linkGit {
   color: white;
 }
 
