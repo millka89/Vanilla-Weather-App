@@ -84,7 +84,7 @@ function displayForecast(response) {
             forecastDay.weather[0].icon
           }@2x.png"
           alt=""
-          width="42"
+          width="62"
         />
         </div>
         <div class="temp-forecast mt-3">
@@ -109,6 +109,12 @@ function getForecast(coordinates) {
   let apiKey = "e4cf1329ae1cef2a3c492edaed3c0c6f";
   let Url = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(Url).then(displayForecast);
+}
+//searchCity
+function search(city) {
+  let apiKey = "e4cf1329ae1cef2a3c492edaed3c0c6f";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(getWeatherParameters);
 }
 
 //weather parameters
@@ -186,4 +192,6 @@ function startNavigator(event) {
 let button = document.querySelector("#geolocation-current");
 button.addEventListener("click", startNavigator);
 
+//navigator.geolocation.getCurrentPosition(retrievePosition);
 navigator.geolocation.getCurrentPosition(retrievePosition);
+search("Brussel");

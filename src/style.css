@@ -17,7 +17,7 @@ body {
   font-weight: 400;
 }
 .current-card {
-  background: linear-gradient(-225deg, #326418 30%, #8da764 48%, #326418 100%);
+  background: linear-gradient(-225deg, #326418 0%, #8da764 48%, #326418 100%);
   color: white;
 }
 .weather-description {
@@ -26,6 +26,7 @@ body {
 .location-name {
   font-family: "Londrina Solid", cursive;
   font-size: 20px;
+  text-align: left;
 }
 .weather-parameters {
   font-weight: bold;
@@ -49,7 +50,7 @@ body {
 .degrees {
   font-size: 18px;
   position: relative;
-  top: -30px;
+  top: -20px;
 }
 .active {
   color: white;
@@ -63,10 +64,15 @@ body {
 .forecast-day {
   font-size: 20px;
   font-weight: bold;
+  color: #326418;
+}
+.description-forecast {
+  font-size: 14px;
+  text-transform: capitalize;
 }
 .coder-footer {
   text-align: center;
-  background: linear-gradient(-225deg, #326418 30%, #8da764 48%, #326418 100%);
+  background: linear-gradient(-225deg, #326418 0%, #8da764 48%, #326418 100%);
   font-weight: 500;
   color: white;
 }

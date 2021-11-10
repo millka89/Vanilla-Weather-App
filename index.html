@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="container weather-app">
+    <div class="container weather-app mt-5">
       <div class="container weather-card mb-1" style="width: 600px">
         <div class="card text-center">
           <div class="card-header weather-header shadow-sm">
@@ -43,10 +43,10 @@
           </div>
           <div class="card-body">
             <form class="row g-3 search-engine" id="city-name-form">
-              <div class="col-auto">
+              <div class="col-auto form-outline">
                 <input
                   style="font-family: 'Font Awesome 5 Free'; font-weight: 700"
-                  type="text"
+                  type="search"
                   id="city-name-search"
                   class="form-control city-search shadow-sm border-light"
                   placeholder="&#xf689; Enter a city"
@@ -55,18 +55,18 @@
                 />
               </div>
               <div class="col-auto">
-                <button
+                <input
                   type="submit"
-                  class="btn btn-primary mb-2 search-button shadow-sm border-0"
+                  class="btn btn-success mb-2 search-button shadow-sm border-0"
+                  value="Search"
                 >
-                  Search
-                </button>
+
               </div>
               <div class="col-auto">
                 <button
                   type="submit"
                   class="
-                    btn btn-primary
+                    btn btn-success
                     mb-2
                     location-button
                     shadow-sm
@@ -81,8 +81,8 @@
             </form>
             <div class="container border-o shadow-sm current-card mt-2 p-2">
               <div class="row">
+                 <h4 class="location-name mt-4 ms-5 ps-3" id="city-name"></h4>
                 <div class="col">
-                  <h4 class="location-name" id="city-name">Enter a city</h4>
                   <img
                     src=""
                     class="current-img"
@@ -95,7 +95,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="col current-temp mt-5 pt-3">
+                  <div class="col current-temp mt-3">
                     <span id="current-temp"> _ </span>
                     <span class="degrees">
                       <a href="#" id="celsius-temp" class="active"> °C </a>
@@ -104,7 +104,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="col mt-5 p-3">
+                <div class="col mt-3">
                   <div class="row">
                     <div class="col weather-parameters">
                       <div class="row">Humidity</div>
