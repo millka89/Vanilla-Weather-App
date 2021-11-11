@@ -27,16 +27,16 @@ function formatDate(date) {
   let currentDay = date.getDate();
   let currentMonth = months[date.getMonth()];
   let currentYear = date.getFullYear();
-  let day = days[date.getDay()];
+  let weekday = days[date.getDay()];
   let hours = now.getHours();
   hours = ("0" + hours).slice(-2);
   let minutes = now.getMinutes();
   minutes = ("0" + minutes).slice(-2);
   let newDate = document.querySelector("#today-date-time");
-  newDate.innerHTML = `${day}, ${currentDay} ${currentMonth} ${currentYear} ${hours}:${minutes}`;
-  let now = new Date();
-  formatDate(now);
+  newDate.innerHTML = `${weekday}, ${currentDay} ${currentMonth} ${currentYear} ${hours}:${minutes}`;
 }
+let now = new Date();
+formatDate(now);
 
 //searching engine
 function enterCity(event) {
@@ -143,7 +143,7 @@ function getWeatherParameters(response) {
   let weatherIconNow = document.querySelector("#current-weather-img");
   weatherIconNow.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   weatherIconNow.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
