@@ -41,24 +41,20 @@ body {
   font-weight: bold;
   text-align: left;
 }
-
 .current-temp {
   text-align: left;
   font-size: 52px;
 }
-
 .weather-forecast {
   font-size: 32px;
   font-weight: 900;
 }
-
 .degrees {
   font-size: 18px;
   position: relative;
   top: -20px;
   color: white;
 }
-
 .forecast-day {
   font-size: 20px;
   font-weight: bold;
@@ -82,7 +78,6 @@ body {
 .linkGit {
   color: white;
 }
-
 #description-parameter {
   text-transform: capitalize;
 }

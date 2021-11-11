@@ -38,7 +38,7 @@ function formatDate(date) {
 let now = new Date();
 formatDate(now);
 
-//searching engine
+//searching engine from openweather Current Weather Data API
 function enterCity(event) {
   event.preventDefault();
   let cityEntered = document.querySelector("#city-name-search");
@@ -57,7 +57,7 @@ function enterCity(event) {
 let citySearchForm = document.querySelector("#city-name-form");
 citySearchForm.addEventListener("submit", enterCity);
 
-//timestamp
+//timestamp for forecast from openweather one call API
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -66,7 +66,7 @@ function formatDay(timestamp) {
   return days[day];
 }
 
-//display forecast
+//display forecast from openweather one call API
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
@@ -102,7 +102,6 @@ function displayForecast(response) {
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
-  console.log(forecast);
 }
 //forecast coordinates
 function getForecast(coordinates) {
@@ -140,6 +139,7 @@ function getWeatherParameters(response) {
   //weather description
   let weatherDescription = document.querySelector("#description-parameter");
   weatherDescription.innerHTML = response.data.weather[0].description;
+  //current weather icon
   let weatherIconNow = document.querySelector("#current-weather-img");
   weatherIconNow.setAttribute(
     "src",
@@ -163,9 +163,12 @@ function startNavigator(event) {
   navigator.geolocation.getCurrentPosition(retrievePosition);
 }
 
+//current location button functionality
 let button = document.querySelector("#geolocation-current");
 button.addEventListener("click", startNavigator);
 
 //navigator.geolocation.getCurrentPosition(retrievePosition);
 navigator.geolocation.getCurrentPosition(retrievePosition);
+
+//city displayed after geolocalization refuse by user
 search("Brussel");
